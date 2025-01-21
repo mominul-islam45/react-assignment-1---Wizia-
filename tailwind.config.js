@@ -8,7 +8,17 @@ export default {
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      // Custom color palate
+      colors: {
+        cyan: '#0FF1F6',
+        dark_bg: '#002228',
+        light_bg: '#07292F'
+      },
+      fontFamily: {
+        montserrat: '"Montserrat", serif'
+      }
+    },
   },
   darkMode: "class",
   plugins: [heroui()],
