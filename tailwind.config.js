@@ -16,7 +16,8 @@ export default {
         light_bg: '#07292F'
       },
       fontFamily: {
-        montserrat: '"Montserrat", serif'
+        montserrat: '"Montserrat", sans serif',
+        work_sans: '"Work Sans", sans serif'
       }
     },
   },
