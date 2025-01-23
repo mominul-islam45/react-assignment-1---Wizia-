@@ -1,5 +1,5 @@
 import React from "react";
-import CheckIcon from '../assets/Vector (2).png'
+import CheckIcon from '../assets/Vector2.png'
 
 function Training() {
 

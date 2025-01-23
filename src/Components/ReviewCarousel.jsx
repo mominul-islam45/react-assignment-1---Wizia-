@@ -39,7 +39,7 @@ function ReviewCarousel() {
           />
         </div>
 
-        <h4 className="text-[24px] leading-8 sm:leading-10 sm:text-[32px] font-light py-8 h-[184px]">
+        <h4 className="text-[20px] leading-8 sm:leading-10 sm:text-[32px] font-light py-8 h-[200px]">
           {slides[currentIndex].review}
         </h4>
         <h6 className="text-cyan text-lg sm:text-2xl font-semibold hover:cursor-pointer">{slides[currentIndex].name}</h6>

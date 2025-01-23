@@ -1,7 +1,7 @@
 import React from 'react'
-import ControlIcon from '/src/assets/vector (3).png'
-import ScalableIcon from '/src/assets/vector (5).png'
-import FlexibleIcon from '/src/assets/vector (4).png'
+import ControlIcon from '/src/assets/vector3.png'
+import ScalableIcon from '/src/assets/vector5.png'
+import FlexibleIcon from '/src/assets/vector4.png'
 
 function Features() {
 
