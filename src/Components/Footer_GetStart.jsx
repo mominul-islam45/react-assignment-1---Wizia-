@@ -5,7 +5,7 @@ import { UpperArrowIcon } from "./Hero";
 function Footer_GetStart() {
   return (
     <section className="w-full">
-      <div className="text-white w-full mx-auto md:w-[800px] xl:w-[1000px] 2xl:w-[1400px] py-20 sm:py-24 space-y-2 sm:space-y-4 px-6 sm:px-12 md:px-20 xl:px-28 2xl:px-52 text-center">
+      <div className="text-white w-full mx-auto md:w-[700px] lg:w-[900px] xl:w-[1200px] 2xl:w-[1400px] py-20 sm:py-24 space-y-2 sm:space-y-4 px-6 sm:px-12 md:px-20 xl:px-28 2xl:px-52 text-center">
         <h6 className="text-cyan text-base sm:text-2xl">AI SDRs (aiDRs)</h6>
         <h2 className="text-[36px] font-medium italic leading-tight sm:leading-none">
           Embrace{" "}

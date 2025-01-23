@@ -24,7 +24,7 @@ function Features() {
     ]
 
   return (
-    <div className='py-20 px-6 sm:px-12 md:px-20 lg:px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-12 max-w-[1700px] mx-auto'>
+    <div className='py-20 px-6 sm:px-12 md:px-20 lg:px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-12 items-baseline max-w-[1700px] mx-auto'>
         {featuresList.map(({icon,title,description},i)=>(
             <div key={i} className='text-white hover:-translate-y-4 transition-transform'>
                 <img src={icon} alt="Icon" className='scale-90 sm:scale-100'/>

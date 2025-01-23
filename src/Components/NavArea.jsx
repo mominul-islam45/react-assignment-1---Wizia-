@@ -10,16 +10,10 @@ function NavArea() {
 
   return (
     <>
-      <Navbar onMenuOpenChange={setIsMenuOpen} isBlurred={false} shouldHideOnScroll={true} maxWidth="xl" className="bg-dark_bg border-b-[0.5px] border-b-white/40">
-        <NavbarContent>
-          <NavbarMenuToggle
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="lg:hidden text-white"
-          />
-          <NavbarBrand>
-            <img src={WiziaLogo} alt="Wizia Logo" />
-          </NavbarBrand>
-        </NavbarContent>
+      <Navbar onMenuOpenChange={setIsMenuOpen} isBlurred={false} shouldHideOnScroll={true} maxWidth="xl" className="bg-dark_bg border-b-small border-b-white/15">
+        <NavbarBrand>
+          <img src={WiziaLogo} alt="Wizia Logo" />
+        </NavbarBrand>
 
         <NavbarContent className="hidden lg:flex gap-4" justify="center">
           {menuItems.map((item, i)=>(
@@ -35,8 +29,13 @@ function NavArea() {
           </NavbarItem>
           <NavbarItem>
             <Button as={Link} variant="bordered" radius="full" className="text-white font-medium">Contact Us</Button>
-          </NavbarItem>
+          </NavbarItem> 
         </NavbarContent>
+        
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="block lg:hidden text-white"
+        />
         
         <NavbarMenu className="bg-dark_bg">
           {menuItems.map((item, index) => (
