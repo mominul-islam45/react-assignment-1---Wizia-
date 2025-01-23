@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 
 function Improvement_Percentage() {
   const percentages = [
@@ -7,9 +9,11 @@ function Improvement_Percentage() {
     { percentage: 35, des: "Improvement in Meetings Booked" },
   ];
 
+  const [counterUp, setCounterUp] = useState(false);
+
   return (
-    <div className="py-10 md:py-20 mx-8 md:mx-16 2xl:mx-auto max-w-[1700px] px-6 sm:px-12 lg:px-16 2xl:px-24 text-white rounded-3xl bg-[url(./assets/Frame18.png)] bg-cover bg-right">
-      <div>
+    <div className="py-10 md:py-20 mx-8 md:mx-16 2xl:mx-auto max-w-[1700px] px-6 sm:px-12 lg:px-16 2xl:px-24 text-white rounded-3xl bg-[url(./assets/Frame18.png)] bg-cover bg-left sm:bg-right space-y-4 md:space-y-12">
+      <div className="lg:w-2/3 xl:w-1/2">
         <h2 className="text-[28px] sm:text-[32px] font-semibold">
           Allocate effort where your reps make an inpact.
         </h2>
@@ -22,12 +26,21 @@ function Improvement_Percentage() {
         </p>
       </div>
 
-      {percentages.map((item, i) => (
-        <div key={i}>
-          <h3>{item.percentage}%</h3>
-          <p>{item.des}</p>
+      <ScrollTrigger
+        onEnter={() => setCounterUp(true)}
+        onExit={() => setCounterUp(false)}
+      >
+        <div className="flex flex-col md:flex-row gap-6 sm:gap-16 xl:w-2/3">
+          {percentages.map((item, i) => (
+            <div key={i}>
+              <h3 className="text-[32px] sm:text-[40px] font-bold text-cyan">
+                {counterUp && <CountUp start={0} end={item.percentage} />}%
+              </h3>
+              <p className="text-[18px] sm:text-[20px] font-medium">{item.des}</p>
+            </div>
+          ))}
         </div>
-      ))}
+      </ScrollTrigger>
     </div>
   );
 }
