@@ -15,7 +15,7 @@ function Hero() {
             <h6 className='text-cyan text-base sm:text-2xl'>AI SDRs (aiDRs)</h6>
             <h2 className='text-[40px] md:text-6xl font-bold leading-tight sm:leading-none'>More <span className='font-medium italic'>leads, <br /></span> less <span className='font-medium italic'>people.</span></h2>
             <p className='font-work_sans font-light  text-lg sm:text-xl'>Train an aiDR on your ICP and messaging matrix. Activate it on a patch. It will send personalized sequences to every target contact.</p>
-            <Button variant='flat' radius='full' endContent={<UpperArrowIcon/>} className='bg-cyan text-dark_bg font-work_sans font-medium w-full md:w-fit'>Sign Up for the Beta</Button>
+            <Button variant='flat' radius='full' endContent={<UpperArrowIcon/>} className='bg-cyan text-dark_bg font-work_sans font-medium w-full sm:w-fit'>Sign Up for the Beta</Button>
         </div>
     </section>
   )

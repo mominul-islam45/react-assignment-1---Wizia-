@@ -1,5 +1,6 @@
 import './App.css'
 import Features from './Components/Features'
+import Footer_GetStart from './Components/Footer_GetStart'
 import Hero from './Components/Hero'
 import Improvement_Percentage from './Components/Improvement_Percentage'
 import NavArea from './Components/NavArea'
@@ -18,6 +19,7 @@ function App() {
       <Training/>
       <ReviewCarousel/>
       <Improvement_Percentage/>
+      <Footer_GetStart/>
     </>
   )
 }
