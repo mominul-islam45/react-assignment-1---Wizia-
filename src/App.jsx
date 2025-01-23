@@ -3,6 +3,7 @@ import Features from './Components/Features'
 import Hero from './Components/Hero'
 import NavArea from './Components/NavArea'
 import Partners from './Components/Partners'
+import ReviewCarousel from './Components/ReviewCarousel'
 import Training from './Components/Training'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Partners/>
       <Features/>
       <Training/>
+      <ReviewCarousel/>
     </>
   )
 }
