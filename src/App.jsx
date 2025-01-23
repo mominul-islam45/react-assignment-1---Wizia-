@@ -1,6 +1,7 @@
 import './App.css'
 import Features from './Components/Features'
 import Hero from './Components/Hero'
+import Improvement_Percentage from './Components/Improvement_Percentage'
 import NavArea from './Components/NavArea'
 import Partners from './Components/Partners'
 import ReviewCarousel from './Components/ReviewCarousel'
@@ -16,6 +17,7 @@ function App() {
       <Features/>
       <Training/>
       <ReviewCarousel/>
+      <Improvement_Percentage/>
     </>
   )
 }
